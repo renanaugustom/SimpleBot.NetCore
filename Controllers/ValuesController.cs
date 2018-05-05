@@ -12,9 +12,10 @@ namespace SimpleBot.NetCore.Controllers
     {
         // GET api/values
         [HttpGet]
-        public ActionResult<IEnumerable<string>> Get()
+        public IActionResult Get()
         {
-            return new string[] { "value1", "value2" };
+            var test = "OK";
+            return Ok(test);
         }
 
         // GET api/values/5
